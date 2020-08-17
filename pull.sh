@@ -1,1 +1,1 @@
-cp -r ~/dev/configs/nvim ~/.config/nvim 
+cp -r ~/dev/configs/nvim ~/.config/
