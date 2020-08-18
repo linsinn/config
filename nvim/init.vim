@@ -91,12 +91,6 @@ set wildmenu
 set wildmode=list:longest
 " set wildignore=.hg,.svn,*~,*.png,*.jpg,*.gif,*.settings,Thumbs.db,*.min.js,*.swp,publish/*,intermediate/*,*.o,*.hi,Zend,vendor
 
-" Use wide tabs
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
-set noexpandtab
-
 " Wrapping options
 set formatoptions=tc " wrap text and comments using textwidth
 set formatoptions+=r " continue comments when pressing ENTER in I mode
@@ -358,11 +352,6 @@ autocmd Filetype html,xml,xsl,php source ~/.config/nvim/scripts/closetag.vim
 " # Footer
 " =============================================================================
 
-" nvim
-if has('nvim')
-	runtime! plugin/python_setup.vim
-endif
-
 
 " =============================================================================
 " # Language
@@ -377,3 +366,13 @@ let $RUST_SRC_PATH = systemlist("rustc --print sysroot")[0] . "/lib/rustlib/src/
 
 " You will have bad experience for diagnostic messages when it's default 4000.
 set updatetime=300
+
+" Use wide tabs
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set noexpandtab
+
+" strange, don't know why
+autocmd FileType python setlocal shiftwidth=2 softtabstop=2 tabstop=2 noexpandtab
+autocmd FileType rust setlocal shiftwidth=2 softtabstop=2 tabstop=2 noexpandtab
