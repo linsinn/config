@@ -103,6 +103,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 alias server="cd /mnt/e/svn-dm99/src/Server/operations"
+alias g99="cd /mnt/e/svn-dm99/src/Package/Script/Python/"
 
 alias vim=nvim
 

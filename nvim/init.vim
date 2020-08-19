@@ -36,6 +36,10 @@ Plug 'rhysd/vim-clang-format'
 "Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'tpope/vim-commentary'
+Plug 'preservim/nerdtree'
+Plug 'jiangmiao/auto-pairs'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
