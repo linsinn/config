@@ -86,6 +86,10 @@ set signcolumn=yes
 set splitright
 set splitbelow
 
+" Permanent undo
+set undodir=~/.vimdid
+set undofile
+
 " Decent wildmenu
 set wildmenu
 set wildmode=list:longest
@@ -376,3 +380,6 @@ set noexpandtab
 " strange, don't know why
 autocmd FileType python setlocal shiftwidth=2 softtabstop=2 tabstop=2 noexpandtab
 autocmd FileType rust setlocal shiftwidth=2 softtabstop=2 tabstop=2 noexpandtab
+
+
+let g:rooter_patterns = ['.git', '.svn', 'Makefile', 'Python']
