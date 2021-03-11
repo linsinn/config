@@ -1,0 +1,28 @@
+set number
+set relativenumber
+
+set ignorecase
+set smartcase
+
+set undodir=~/.vim/undodir
+set undofile
+set undolevels=1000
+set undoreload=10000
+set hlsearch
+
+map H ^
+map L $
+map <CR> :nohlsearch<CR>
+
+set NERDTree
+
+set surround
+
+set multiple-cursors
+
+set exchange
+
+set highlightedyank
+let g:highlightedyank_highlight_duration = "2000"
+
+
